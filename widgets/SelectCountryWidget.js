@@ -1044,6 +1044,7 @@ module.exports = createReactClass({
   },
 
   onSelect(name, value) {
+    this.setState({search: name});
     this._onChange(value);
     this.props.onClose(name, this.props.navigator);
   },
